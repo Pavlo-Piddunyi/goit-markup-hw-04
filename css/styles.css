@@ -200,11 +200,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
- 
-
   }
-  .hero-container {
+.hero-container {
 
   }
 .hero-title {
@@ -256,6 +253,15 @@ padding: 120px 0;
 }
 .feature-item {
   width: calc((100% - 3 * 24px) / 4);
+}
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background: #F4F4FD;
+
 }
 
 .feature-subtitle {
