@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <!-- Normalize -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
@@ -29,13 +30,13 @@
             >Web<span class="header-studio">Studio</span></a
           >
           <ul class="header-list list">
-            <li class="header-item link"
-              ><a class="header-link link" href="./index.html">Studio</a></li
+            <li class="header-item"
+              ><a class="header-link link active" href="./index.html">Studio</a></li
             >
-            <li class="header-item link"
+            <li class="header-item"
               ><a class="header-link link" href="./portfolio.html">Portfolio</a></li
             >
-            <li class="header-item link"><a class="header-link link" href="">Contacts</a></li>
+            <li class="header-item"><a class="header-link link" href="">Contacts</a></li>
           </ul>
         </nav>
         <address class="header-address">
@@ -68,9 +69,11 @@
           <h2 class="feature-title visually-hidden">Content</h2>
           <ul class="feature-list list">
             <li class="feature-item">
-              <svg class="feature-icon" width="64" height="64">
-                <use href="./images/icons.svg#antenna"></use>
-              </svg>
+              <div class="feature-container">
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/icons.svg#antenna"></use>
+                </svg>
+              </div>
               <h3 class="feature-subtitle">Strategy</h3>
               <p class="feature-text">
                 Our goal is to identify the business problem to walk away with the perfect and
@@ -78,9 +81,11 @@
               </p>
             </li>
             <li class="feature-item">
-              <svg class="feature-icon" width="64" height="64">
-                <use href="./images/icons.svg#clock"></use>
-              </svg>
+              <div class="feature-container">
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+              </div>
               <h3 class="feature-subtitle">Punctuality</h3>
               <p class="feature-text">
                 Bring the key message to the brand's audience for the best price within the shortest
@@ -88,9 +93,11 @@
               </p>
             </li>
             <li class="feature-item">
-              <svg class="feature-icon" width="64" height="64">
-                <use href="./images/icons.svg#diagram"></use>
-              </svg>
+              <div class="feature-container">
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/icons.svg#diagram"></use>
+                </svg>
+              </div>
               <h3 class="feature-subtitle">Diligence</h3>
               <p class="feature-text">
                 Research and confirm brands that present the strongest digital growth opportunities
@@ -98,9 +105,11 @@
               </p>
             </li>
             <li class="feature-item">
-              <svg class="feature-icon" width="64" height="64">
-                <use href="./images/icons.svg#astronaut"></use>
-              </svg>
+              <div class="feature-container">
+                <svg class="feature-icon" width="64" height="64">
+                  <use href="./images/icons.svg#astronaut"></use>
+                </svg>
+              </div>
               <h3 class="feature-subtitle">Technologies</h3>
               <p class="feature-text">
                 Design practice focused on digital experiences. We bring forth a deep passion for
@@ -204,6 +213,56 @@
           </ul>
         </div>
       </section>
+      <!-- section clients -->
+      <section class="section clients">
+        <div class="container">
+          <h4 class="customers-title">Customers</h4>
+          <ul class="clients-list list">
+            <li class="clients-item">
+              <a class="clients-link" href="" arial-label="logo-1">
+                <svg class="clients-icon" width="104" height="56">
+                  <use href="./images/icons.svg#Logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="" arial-label="logo-2">
+                <svg class="clients-icon" width="104" height="56">
+                  <use href="./images/icons.svg#Logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="" arial-label="logo-3">
+                <svg class="clients-icon" width="104" height="56">
+                  <use href="./images/icons.svg#Logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="" arial-label="logo-4">
+                <svg class="clients-icon" width="104" height="56">
+                  <use href="./images/icons.svg#Logo-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="" arial-label="logo-5">
+                <svg class="clients-icon" width="104" height="56">
+                  <use href="./images/icons.svg#Logo-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="" arial-label="logo-6">
+                <svg class="clients-icon" width="104" height="56">
+                  <use href="./images/icons.svg#Logo-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -214,5 +273,15 @@
         >
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </body>
 </html>

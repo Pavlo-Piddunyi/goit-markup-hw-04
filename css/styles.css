@@ -156,7 +156,21 @@ img {
 .header-link:focus {
   color: var(--hover-focus-cl);
 }
+.header-link.active::after {
+content: '';
+position: absolute;
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: #404BBF;
+bottom: 0;
+left: 0;
+
+}
+
 .header-link {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
@@ -216,9 +230,11 @@ img {
   margin: 0 auto;
   margin-bottom: 48px;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--hover-focus-cl);
+
 }
 .hero-btn {
   font-weight: 500;
@@ -253,15 +269,19 @@ padding: 120px 0;
 }
 .feature-item {
   width: calc((100% - 3 * 24px) / 4);
+  
 }
-.feature-icon {
+.feature-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 264px;
+  height: 112px;
   margin-bottom: 8px;
   border-radius: 4px;
   background: #F4F4FD;
-
+}
+.feature-icon {
 }
 
 .feature-subtitle {
@@ -368,6 +388,57 @@ padding-bottom: 120px;
   text-align: center;
   }
 
+
+/**
+  |============================
+  | Clients styles
+  |============================
+*/
+
+
+.clients {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  margin: 0 auto;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color:  #2E2F42;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  }
+.clients-item {
+}
+.clients-link:hover{
+  border-color: #404BBF;
+}
+.clients-link:hover .clients-icon {
+  fill: #404BBF;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8E8F99;
+  border-radius: 8px;
+}
+.clients-icon {
+  fill: #8E8F99;
+}
 /**
   |============================
   | Footer styles
@@ -487,4 +558,51 @@ padding-bottom: 120px;
 .filter-text {
   letter-spacing: 0.32px;
   color: var(--text-grey-cl);
+}
+
+/**
+  |============================
+  | Modal styles
+  |============================
+*/
+.backdrop {
+  position: fixed; top: 0; left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color:rgba(46, 47, 66, 0.40);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 408px;
+  height: 584px;
+
+  transform: translateX(-50%) translateY(-50%);
+
+  border-radius: 4px;
+  background: #FCFCFC;
+  
+}
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 0;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background:  #E7E9FC;
+}
+.modal-icon {
+  stroke: #2E2F42;
 }
