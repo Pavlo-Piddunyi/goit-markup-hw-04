@@ -387,7 +387,6 @@ padding-bottom: 120px;
   text-align: center;
   }
 
-
 .team-item {
   background: #FFF;
   border-radius: 0px 0px 4px 4px;
@@ -433,21 +432,30 @@ padding-bottom: 120px;
 
   width: 40px;
   height: 40px;
-
+  
+  color: #8e8f99;
+  
   background-color: #4D5AE5;
   border-radius: 50%;
 
   transition: background-color var(--anim);
+  transition: color var(--anim);
 }
 
 .icon-link:hover,
 .icon-link:focus {
-  background-color: #404BBF;
-  }
+  transition: background-color var(--anim);
+  transition: color var(--anim);
+  
+  background-color: #404bbf;
+  color: #404bbf;
+    
+}
 
 .icon-network {
+  fill: currentColor;
   fill: #F4F4FD;
-}
+  }
   
 
 /**
