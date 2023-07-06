@@ -742,9 +742,9 @@ fill: #F4F4FD;
   height: 100%;
 
   background-color:rgba(46, 47, 66, 0.40);
-
+  transition: transform var(--anim);
   transition: opacity var(--anim), visibility var(--anim);
-
+ 
 
 }
 .backdrop.is-hidden {
@@ -767,7 +767,7 @@ fill: #F4F4FD;
   0px 1px 3px rgba(0, 0, 0, 0.12), 
   0px 2px 1px rgba(0, 0, 0, 0.2);
   background: #FCFCFC;
-
+  
   transition: transform var(--anim);
   transition: opacity 300ms ease-out 250ms, transform 300ms ease-out 250ms;
   }
@@ -804,15 +804,15 @@ fill: #F4F4FD;
   background: #E7E9FC;
   
   transition: background-color var(--anim), border var(--anim);
-  
+  }
+
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: #ffffff;
+  transition: fill var(--anim);
 }
 
-.modal-icon:focus,
-.modal-icon:hover {
-  fill: #2E2F42;
-  transition: fill var(--anim);}
-
 .modal-icon {
-  fill: #ffffff;
+  fill: #2E2F42;
   transition: fill var(--anim);
 }
