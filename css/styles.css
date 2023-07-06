@@ -759,9 +759,9 @@ fill: #F4F4FD;
   left: 50%;
 
   width: 408px;
-  height: 584px;
+  min-height: 584px;
+  transform: translate(-50%, -50%) scale(1);
 
-  transform: translateX(-50%) translateY(-50%) scale(1);
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
   0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -780,7 +780,7 @@ fill: #F4F4FD;
 
 .modal-btn:hover,
 .modal-btn:focus {
-    transition: background-color var(--anim), border var(--anim), fill var(--anim);
+  transition: background-color var(--anim), border var(--anim), fill var(--anim);
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
@@ -805,7 +805,8 @@ fill: #F4F4FD;
   background: #E7E9FC;
   fill: #2E2F42;
 
-  transition: background-color var(--anim), border var(--anim), fill var(--anim);
+  transition: background-color var(--anim), border var(--anim);
+  transition: fill var(--anim);
 }
 
 .modal-icon {
