@@ -757,26 +757,19 @@ fill: #F4F4FD;
   position: absolute;
   top: 50%;
   left: 50%;
-
+   
   width: 408px;
   min-height: 584px;
-  transform: translate(-50%, -50%) scale(1);
-
   border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #FCFCFC;
+  
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
   0px 1px 3px rgba(0, 0, 0, 0.12), 
   0px 2px 1px rgba(0, 0, 0, 0.2);
-  background: #FCFCFC;
   
-  transition: transform var(--anim);
-  transition: opacity 300ms ease-out 250ms, transform 300ms ease-out 250ms;
-  }
-
-    /* Hidden state*/
-.backdrop.is-hidden .modal {
-  opacity: 0;
-  transform: translateX(-50%) translateY(-70%);
 }
+
 
 .modal-btn:hover,
 .modal-btn:focus {
@@ -802,7 +795,7 @@ fill: #F4F4FD;
   height: 24px;
   
   padding: 0;
-  
+
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.10);
   background: #E7E9FC;
