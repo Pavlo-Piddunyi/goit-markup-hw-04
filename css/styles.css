@@ -423,8 +423,7 @@ padding-bottom: 120px;
   display: flex;
   justify-content: center;
   cursor: pointer;
-  transition: background-color var(--anim);
-
+  
 }
 
 .icon-link {
@@ -439,20 +438,14 @@ padding-bottom: 120px;
   border-radius: 50%;
 
   transition: background-color var(--anim);
-  transition: color var(--anim);
 }
 
 .icon-link:hover,
 .icon-link:focus {
   transition: background-color var(--anim);
-  transition: fill var(--anim);
   background-color: #404bbf;
-  
-    
 }
-
 .icon-network {
-  transition: fill var(--anim);
   fill: #F4F4FD;
   }
   
@@ -493,21 +486,27 @@ padding-bottom: 120px;
 .clients-link:hover,
 .clients-link:focus {
   border-color: #404BBF;
-  transition: background-color var(--anim);
-  transition: color var(--anim);
   color: #404BBF;
+
+  transition: border-color var(--anim);
+  transition: color var(--anim);
+  
 }
 
 .clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 168px;
   height: 88px;
+
   border: 1px solid #8E8F99;
   border-radius: 4px;
+
   transition: border-color var(--anim);
-  transition: fill var(--anim);
+  transition: color var(--anim);
+
   color: #8e8f99;
 }
 .clients-icon {
