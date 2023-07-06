@@ -423,6 +423,8 @@ padding-bottom: 120px;
   display: flex;
   justify-content: center;
   cursor: pointer;
+  transition: background-color var(--anim);
+
 }
 
 .icon-link {
@@ -432,9 +434,7 @@ padding-bottom: 120px;
 
   width: 40px;
   height: 40px;
-  
-  color: #8e8f99;
-  
+      
   background-color: #4D5AE5;
   border-radius: 50%;
 
@@ -445,15 +445,14 @@ padding-bottom: 120px;
 .icon-link:hover,
 .icon-link:focus {
   transition: background-color var(--anim);
-  transition: color var(--anim);
-  
+  transition: fill var(--anim);
   background-color: #404bbf;
-  color: #404bbf;
+  
     
 }
 
 .icon-network {
-  fill: currentColor;
+  transition: fill var(--anim);
   fill: #F4F4FD;
   }
   
@@ -484,17 +483,19 @@ padding-bottom: 120px;
   display: flex;
   justify-content: center;
   gap: 24px;
+  transition: background-color var(--anim);
   }
 
 .clients-item {
+  
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: #404BBF;
   transition: background-color var(--anim);
-  transition: fill var(--anim);
-  fill: #404BBF;
+  transition: color var(--anim);
+  color: #404BBF;
 }
 
 .clients-link {
@@ -507,10 +508,10 @@ padding-bottom: 120px;
   border-radius: 4px;
   transition: border-color var(--anim);
   transition: fill var(--anim);
-  fill: #8e8f99;
+  color: #8e8f99;
 }
 .clients-icon {
-  
+  fill: currentColor;
   
 }
 /**
