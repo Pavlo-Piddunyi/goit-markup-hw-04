@@ -476,7 +476,6 @@ padding-bottom: 120px;
   display: flex;
   justify-content: center;
   gap: 24px;
-  transition: background-color var(--anim);
   }
 
 .clients-item {
@@ -488,8 +487,7 @@ padding-bottom: 120px;
   border-color: #404BBF;
   color: #404BBF;
 
-  transition: border-color var(--anim);
-  transition: color var(--anim);
+  transition: border-color var(--anim) color var(--anim);
   
 }
 
@@ -504,9 +502,8 @@ padding-bottom: 120px;
   border: 1px solid #8E8F99;
   border-radius: 4px;
 
-  transition: border-color var(--anim);
-  transition: color var(--anim);
-
+  transition: border-color var(--anim) color var(--anim);
+  
   color: #8e8f99;
 }
 .clients-icon {
