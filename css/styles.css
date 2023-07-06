@@ -780,10 +780,9 @@ fill: #F4F4FD;
 
 .modal-btn:hover,
 .modal-btn:focus {
-  transition: background-color var(--anim), border var(--anim), fill var(--anim);
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+  
 }
 
 .modal-btn {
@@ -803,12 +802,17 @@ fill: #F4F4FD;
 
   border: 1px solid rgba(0, 0, 0, 0.10);
   background: #E7E9FC;
-  fill: #2E2F42;
-
+  
   transition: background-color var(--anim), border var(--anim);
-  transition: fill var(--anim);
+  
 }
 
-.modal-icon {
+.modal-icon:focus,
+.modal-icon:hover {
+  fill: #2E2F42;
+  transition: fill var(--anim);}
 
+.modal-icon {
+  fill: #ffffff;
+  transition: fill var(--anim);
 }
